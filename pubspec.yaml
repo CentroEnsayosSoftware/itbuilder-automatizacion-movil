@@ -1,0 +1,54 @@
+name: ticket_fold
+description: A new Flutter project.
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared:
+      path: ../_shared
+
+  provider: ^6.1.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  patrol: ^3.6.1
+  
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+   - images/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: fonts/OpenSans-SemiBold.ttf
+          weight: 600
+    - family: Oswald
+      fonts:
+        - asset: fonts/Oswald-Regular.ttf
+patrol:
+  app_name: My App
+  android:
+    package_name: com.gskinner.ticket_fold.ticket_fold
+  ios:
+    bundle_id: com.example.ticketFold
+  macos:
+    bundle_id: com.example.macos.ticketFold
+
